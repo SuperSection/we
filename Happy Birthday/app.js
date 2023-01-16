@@ -54,3 +54,19 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+var images = ['images/beautiful.jpg', 'images/31st_special.jpg', 'images/in_Horse_Cart.jpg', '/images/won_prize.jpg', 'images/red_beauty.jpg',]
+var i = 0;
+
+function slidShow() {
+  document.getElementById("image").src=images[i];
+
+  if(i<images.lengh-1){
+    i++;
+  }
+  else {
+    i=0;
+  }
+  setTimeout("slideShow()", 2000)
+}
+window.onLoad = slideShow;

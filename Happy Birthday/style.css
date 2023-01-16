@@ -8,6 +8,10 @@
     /* font-family: 'Source Sans 3', sans-serif; */
     scroll-behavior: smooth;
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
   
   .navbar {
     background: linear-gradient(to right, #161616, #000000);
@@ -33,8 +37,8 @@
   }
   
   #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #fb6060;
+    background-image: linear-gradient(to top, #ff0263 0%, #fb6060 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -457,7 +461,7 @@
 
 
   /* About Section */
-.main {
+  .main {
     background-color: #131313;
     padding: 6rem 0;
   }
@@ -494,7 +498,7 @@
   }
   
   .main__content h2 {
-    font-size: 3.7rem;
+    font-size: 3rem;
     
     background: #ff8177; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -568,6 +572,7 @@
   .main__img--container {
     text-align: center;
     position: relative;
+    height: fit-content;
   }
   
   .main__img--card {
@@ -584,6 +589,7 @@
   }
 
   .main__img--card img {
+    height: fit-content;
     position: absolute;
     margin: auto;
   }
@@ -591,6 +597,85 @@
   #card-2 {
     background: -webkit-linear-gradient(to right, #fc0373, #63108d);
     background: linear-gradient(to right, #fc0373, #63108d);
+  }
+
+  .poem {
+    background-color: #131313;
+    padding: 5rem 0;
+  }
+
+  .poem__container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+
+  .poem__content {
+    width: 100%;
+  }
+
+  .poem__content h2 {
+    font-size: 1.5rem;
+    
+    background: -webkit-linear-gradient(
+      to right,
+      #8507f3,
+      #db25ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8105ed,
+      #db28ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .poem__img-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper {
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 25px -3px rgba(0,0,0,0.4);
+    height: fit-content;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .swiper-slider img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper .swiper-button-prev, 
+  .swiper-button-next {
+    color: #dfdbdb;
+  }
+
+  .swiper .swiper-pagination-bullet-active {
+    background: white;
   }
 
 
